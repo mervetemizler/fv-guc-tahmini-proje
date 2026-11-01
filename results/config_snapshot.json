@@ -1,0 +1,10 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "window": 96,
+  "horizon": 16,
+  "n_channels": 9
+}

@@ -1,0 +1,16 @@
+Başlangıç: 731 dosya, yıllar=[2015, 2016]
+50/731 işlendi, başarısız=0
+100/731 işlendi, başarısız=0
+150/731 işlendi, başarısız=0
+200/731 işlendi, başarısız=0
+250/731 işlendi, başarısız=0
+300/731 işlendi, başarısız=0
+350/731 işlendi, başarısız=0
+400/731 işlendi, başarısız=0
+450/731 işlendi, başarısız=0
+500/731 işlendi, başarısız=0
+550/731 işlendi, başarısız=0
+600/731 işlendi, başarısız=0
+650/731 işlendi, başarısız=0
+700/731 işlendi, başarısız=0
+BİTTİ {'years': [2015, 2016], 'expected': {'2015': 365, '2016': 366}, 'downloaded': {'2015': 365, '2016': 366}, 'failed': [], 'finished_at': '2026-11-01T11:48:08.682299'}

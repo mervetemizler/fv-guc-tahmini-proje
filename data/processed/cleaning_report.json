@@ -1,0 +1,42 @@
+{
+  "sentinel_counts": {
+    "ac_power": 0,
+    "poa_irradiance": 4,
+    "ambient_temp": 2,
+    "module_temp_1": 26748
+  },
+  "poa_extreme_negative_count": 1,
+  "poa_night_negative_clipped_count": 495919,
+  "ambient_out_of_range_count": 1,
+  "module_temp_out_of_range_count": 0,
+  "fill": {
+    "ac_power": {
+      "filled_steps": 0,
+      "remaining_nan": 0
+    },
+    "poa_irradiance": {
+      "filled_steps": 0,
+      "remaining_nan": 0
+    },
+    "ambient_temp": {
+      "filled_steps": 0,
+      "remaining_nan": 0
+    },
+    "module_temp_1": {
+      "filled_steps": 0,
+      "remaining_nan": 0
+    }
+  },
+  "n_rows": 68352,
+  "nan_ratio": {
+    "ac_power": 0.0,
+    "poa_irradiance": 0.0,
+    "ambient_temp": 0.0,
+    "module_temp_1": 0.0
+  },
+  "start": "2015-01-01 00:15:00",
+  "end": "2016-12-13 00:00:00",
+  "data_end": "2016-12-13 00:00",
+  "data_end_reason": "2016-12-13 10:13'ten itibaren module_temp_1 sürekli eksik ve 2016-12-14'ten itibaren invertör kapalı (POA 1000+ W/m² iken AC ≈ 3 W); bu günler fiziksel olarak tahmin edilemez. Kullanıcı kararıyla veri 2016-12-13 00:00'da kesildi; Aralık test segmenti 12 gündür.",
+  "ac_over_capacity_minutes": 460
+}

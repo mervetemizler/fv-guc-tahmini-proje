@@ -1,0 +1,46 @@
+{
+  "train": {
+    "n_windows": 21581,
+    "per_segment": {
+      "0": 21581
+    },
+    "dropped_nan": 0,
+    "dropped_all_night": 13348,
+    "all_night_windows_kept": 0
+  },
+  "val": {
+    "n_windows": 10608,
+    "per_segment": {
+      "1": 1515,
+      "2": 1783,
+      "3": 2015,
+      "4": 2038,
+      "5": 1756,
+      "6": 1501
+    },
+    "dropped_nan": 0,
+    "dropped_all_night": 6390,
+    "all_night_windows_kept": 0
+  },
+  "test": {
+    "n_windows": 14982,
+    "per_segment": {
+      "7": 2673,
+      "8": 2769,
+      "9": 2769,
+      "10": 2865,
+      "11": 2865,
+      "12": 1041
+    },
+    "dropped_nan": 0,
+    "dropped_all_night": 0,
+    "all_night_windows_kept": 5387,
+    "season_counts": {
+      "Kış": 3714,
+      "İlkbahar": 2769,
+      "Yaz": 5634,
+      "Sonbahar": 2865
+    }
+  },
+  "n_train_rows": 35040
+}

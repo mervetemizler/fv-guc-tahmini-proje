@@ -1,0 +1,13 @@
+{
+  "system_id": 4,
+  "years": [
+    2015,
+    2016
+  ],
+  "days": {
+    "2015": 365,
+    "2016": 366
+  },
+  "criterion": "Her iki yılı da gerekli kolonlara sahip, en az 350 günlük ardışık çiftler arasından en küçük gün sayısı en büyük olan çift seçildi (2015: 365 gün, 2016: 366 gün).",
+  "selected_on": "2026-11-01"
+}

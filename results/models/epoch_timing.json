@@ -1,0 +1,13 @@
+{
+  "lstm": {
+    "epoch_sec": 0.5418245000000752,
+    "n_params": 53520
+  },
+  "device_name": "NVIDIA GeForce RTX 3060",
+  "cnn_lstm": {
+    "epoch_sec": 0.5685985000018263,
+    "n_params": 41424
+  },
+  "max_epochs_config": 60,
+  "estimated_worst_case_min": 3.411591000010958
+}

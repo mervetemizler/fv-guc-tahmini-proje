@@ -1,0 +1,15 @@
+{
+  "system_id": 4,
+  "capacity_kw": 1.0,
+  "capacity_source": "systems_20250729.csv: dc_capacity_kW (system_id=4); 4_system_metadata.json: System.power=\"1.0\" ile tutarlı; 5 adet Sanyo HIP-200BA3 modül (5 x 200 W = 1,0 kW) ile doğrulandı",
+  "latitude": 39.7406,
+  "longitude": -105.1774,
+  "tilt_deg": 40.0,
+  "azimuth_deg": 180.0,
+  "name": "NREL x-Si -1",
+  "source_url": "https://oedi-data-lake.s3.amazonaws.com/pvdaq/csv/system_metadata/4_system_metadata.json",
+  "accessed_on": "2026-11-01",
+  "timezone_note": "systems_20250729.csv timezone_or_utc_offset=7 (UTC-7, Golden CO, Mountain Time); ham measured_on zaman damgasının yerel saat mi UTC mi olduğu Plan 01-04'te veriden doğrulanmalı",
+  "elevation_m": 1795.3,
+  "site_location": "Golden, CO"
+}
