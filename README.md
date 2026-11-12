@@ -114,15 +114,10 @@ Teslim dosyaları: [Word raporu](reports/rapor.docx), [PowerPoint sunumu](presen
 
 ## Yapılan Adımların Kaydı
 
-### Faz 1: Ortam ve veri edinimi
-
-- uv ile Python 3.14 sanal ortamı, GPU'lu PyTorch (cu132, RTX 3060 doğrulandı), sabitlenmiş `requirements.txt`, merkezi `src/config.py`.
-- PVDAQ sistem 4 için 2010-2024 yıl envanteri çıkarıldı; 2015-2016 seçildi, 731 günlük 1 dk veri 8 thread ile eksiksiz indirildi.
-- Günlük CSV'ler tek ham parquet'e birleştirildi; gün, satır, -7999 yer tutucusu, birim ve saat dilimi doğrulandı.
-- Kapasite (1 kW), lisans ve atıf `data/raw/DATA_SOURCE.md`'ye yazıldı.
 
 
-### Faz 2: Temizleme, EDA, öznitelik ve pencereleme
+
+### Faz : Temizleme, EDA, öznitelik ve pencereleme
 
 - Ham 1 dk veri temizlenip sızıntısız 15 dk ızgaraya indirildi (68.352 satır, 9 girdi kanalı + `is_day`).
 - Ay-segmentli train/val/test bölmesi; ölçekleyiciler yalnız train'e fit edildi.
@@ -130,7 +125,7 @@ Teslim dosyaları: [Word raporu](reports/rapor.docx), [PowerPoint sunumu](presen
 - 10 Türkçe EDA figürü ve baştan sona çalışan `01_eda.ipynb` hazırlandı.
 
 
-### Faz 3: Baseline ve derin öğrenme modelleri
+### Faz : Baseline ve derin öğrenme modelleri
 
 - Ortak `evaluate()` (gece kuralı; MAE/RMSE/R2/nRMSE) ve dört baseline kuruldu.
 - LSTM ve CNN-LSTM, elle batch'li, seed'li, early-stopping'li GPU eğitim döngüsüyle 3 seed eğitildi.
@@ -138,7 +133,7 @@ Teslim dosyaları: [Word raporu](reports/rapor.docx), [PowerPoint sunumu](presen
 - Taslak rapor ve 7 slaytlık sunum taslağı üretildi (sayılar JSON dosyalarından okunur).
 
 
-### Faz 4: Karşılaştırma ve hata analizi
+### Faz : Karşılaştırma ve hata analizi
 
 - POA tabanlı açıklık indeksiyle test günleri Açık/Parçalı/Kapalı etiketlendi; sınıf bazında metrikler üretildi.
 - Dört kümülatif öznitelik grubuyla ablasyon yapıldı (yalnız güç, +zaman, +ışınım, +sıcaklıklar).
@@ -146,13 +141,6 @@ Teslim dosyaları: [Word raporu](reports/rapor.docx), [PowerPoint sunumu](presen
 - Gün-bloklu bootstrap ile kesit bazında kazanan tablosu ve `results/yorum.md` oluşturuldu.
 
 
-### Faz 5: Rapor, sunum ve son kontrol
-
-- CR-01: karışık karar kuralı kaldırıldı; 30 kesitin tamamı ilgili maske ile gün-bloklu bootstrap'e bağlandı. CR-02: `ablation.py --only` artık mevcut CSV ile birleştirir.
-- Word raporu (`reports/build_report.py`): sayılar CSV'lerden üretilir, IEEE kaynakça Crossref ile doğrulandı.
-- Sunum (`presentation/build_deck.js`): 14 slayt, konuşmacı notlu, LibreOffice/Poppler ile görsel QA yapıldı.
-- Beş notebook `nbconvert --execute --inplace` ile baştan hatasız yürütüldü; notebook 05 sonuç cümleleri CSV'den üretilir.
-- Bu README ve sonuç bloğu üreticisi (`reports/readme_sonuc.py`) eklendi.
 
 
 ## Sınırlamalar
